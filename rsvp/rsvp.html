@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rsvp.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script>emailjs.init("FD23SeCS4zAVskE8d");</script>
+</head>
+<body>
+    <div class="rsvp-form-container">
+        <form id="rsvpForm">
+            <h2>RSVP</h2>
+    
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="attendance">Kommst du rum?</label>
+            <select id="attendance" name="attendance">
+                <option value="Ja">Ja!</option>
+                <option value="Nein">Nein :( </option>
+                <option value="Vielleicht">Vielleicht...</option>
+            </select>
+    
+            <label for="guests">Bringst du wen mit? Wenn ja, wen?</label>
+            <input type="text" id="guests" name="guests">
+    
+            <label for="comments">Was du mir schon immer mal sagen wolltest:</label>
+            <textarea id="comments" name="comments"></textarea>
+            <label class="Kehr" for="kehr">Kehr Arbeit: Liebe Cis Dudes ihr sucht noch nach einem Weg wie ihr am 08.03 als Feminist glitzern und glänzen könnt? Worry no more! Schnappt euch den Feudel! Ich mach euch das feministische Kehrarbeit Stempelkärtle voll und ihr bekommt eine Teilnahmeurkunde wenn ihr am Tag nach der Party zum Putzdienst erscheint. Bitte meldet euch bei mir und ich erwarte euch mit einem feuchten Händedruck und Feminist Validation, bussi!</label>
+            <select id="kehr" name="kehr">
+                <option value="Ja">Safe!</option>
+                <option value="Nein">Neee sorry :( </option>
+                <option value="KeinCisMann">Kein Cis-Mann hehe</option>
+            </select>
+            
+            <button type="submit"><p>Submit</p></button>
+
+
+        </form>
+        <script src="rsvp.js"></script>  
+</body>
+</html>

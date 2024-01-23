@@ -9,11 +9,6 @@
 }
 
 @font-face {
-    font-family: FKR;
-    src: url(font/fkraster.otf);
-}
-
-@font-face {
     font-family: TanParadiso;
     src: url(font/tan-paradiso.otf);
 }
@@ -203,6 +198,17 @@ body {
 
 .wrap {
     width: 100%;
+    
+}
+
+.wrapwrap {
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.343);
+    padding-block: 1rem;
 }
 
 .title {
@@ -329,6 +335,7 @@ height: 1px;
 
 
 .button {
+    margin-top: 2rem;
     background-color: #ff2088;
     border-radius: 100%;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;

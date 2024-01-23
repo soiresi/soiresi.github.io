@@ -23,10 +23,17 @@
     src: url(font/tanbuster.otf);
 }
 
+.fa-arrow-down {
+    position: absolute;
+    opacity: 0;
+ }
+
 body {
     margin: 0%;
     padding: 0;
     background-color: #fe63cf;
+    background-image: url(img/SVG/bg3.svg);
+    background-position: center;
 }
 
 .animation {
@@ -35,6 +42,7 @@ body {
     top: 0;
     width: 25%;
     animation: spin 12s linear infinite;
+    overflow: hidden;
 }
 
 @keyframes spin {
@@ -48,9 +56,11 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-start;
+    overflow: hidden;
+   
 }
+
+
 
 
 #invitation {
@@ -207,10 +217,16 @@ body {
     
 }
 
+.spacer {
+flex-grow: 1;
+background-color: #3700ff;
+height: 1px;
+}  
+
 .w {
     font-family: TanParadiso;
     color: #3700ff; 
-    flex-grow: 1;
+    
 }
 
 .p, .a {
@@ -249,8 +265,8 @@ body {
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-content: center;
+    gap: .2rem;
     width: 90%;
 }
 
@@ -472,7 +488,7 @@ body {
     .w {
         font-family: TanParadiso;
         color: #3700ff; 
-        flex-grow: 1;
+        
     }
     
     .p, .a {
@@ -483,9 +499,9 @@ body {
     
     .k {
         font-family: Raleway;
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: #3700ff; 
-        width: 100%; 
+        width: 50%; 
         text-align: center;
         margin-top: 1.2rem;
     }
@@ -498,9 +514,95 @@ body {
         display: flex;
         align-items: flex-end;
         justify-content: space-between;
-        gap: 1rem;
+        gap: .2rem;
         width: 60%;
     }
+
+
+.w {
+    font-family: TanParadiso;
+    color: #3700ff; 
+    font-size: 2rem;
+}
+
+.p, .a {
+    font-family: Raleway;
+    font-size: 2rem;
+    color: #3700ff; 
+    text-align: end;
+}
+
+.ps {
+    font-family: Raleway;
+    font-size: 1.5rem;
+    color: #3700ff; 
+    text-align: end;
+    
+}
+
+.flx2 {
+   padding-top: 1rem;
+}
+
+
+
+.a {
+    text-decoration: underline;
+}
+
+.flx, .flx2 {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .2rem;
+    width: 50%;
+}
+
+.spacer {
+height: 2px;
+} 
+
+.flx3 {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 50%;
+} 
+
+.button {
+    background-color: #ff2088;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 2.4rem 2.3rem 1.5rem 3.4rem;
+    color: #C1FF72;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: TanParadiso;
+    gap: .5rem;
+    font-size: 4rem;
+    animation: pulse 1s infinite ease-in-out; 
+}
+
+.button .fa-arrow-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem; 
+    margin-bottom: .8rem; 
+}
+
+.fa-arrow-down {
+    color: #C1FF72;
+    font-size: 4rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
     
 
     

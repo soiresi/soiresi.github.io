@@ -12,11 +12,10 @@ document.getElementById('rsvpForm').addEventListener('submit', function(event) {
     })
     .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
-        alert("Antwort gesendet! :) ")
+        window.location.href = 'confirmation.html';
     }, function(error) {
         console.log('FAILED...', error);
         alert("Das hat nicht funktioniert :( Wende dich an Theresa oder versuch es später nochmal! ")
     });
 });
-
 

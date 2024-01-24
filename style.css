@@ -202,11 +202,10 @@ body {
 }
 
 .wrapwrap {
-    
-    backdrop-filter: blur( 10px );
-    -webkit-backdrop-filter: blur( 10px );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.343);
+    border: 1px solid #3700ff;
     padding-block: 1.5rem;
 }
 
@@ -258,7 +257,9 @@ height: 1px;
     color: #3700ff; 
     width: 100%; 
     text-align: center;
-    margin-top: 1.2rem;
+    padding-top: 1.2rem;
+    margin: auto;
+    width: 90%;
 }
 
 .a {
